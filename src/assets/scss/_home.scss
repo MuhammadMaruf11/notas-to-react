@@ -1,0 +1,44 @@
+@use "common" as *;
+
+.heroArea{
+    background-image: url(../img/bg/bg-1.jpg);
+    min-height: 960px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    z-index: -1;
+}
+
+.hero-text-wrap{
+    padding: 180px 0;
+    .hero-title{
+        color: #475569;
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .desc{
+        margin-bottom: 40px;
+        font-size: 17px;
+        font-weight: 400;
+    }
+}
+
+.hero-btn{
+    background: #94a3b8;
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.hero-btn.github-btn{
+    background: #334155;
+    margin-left: 5px;
+}
