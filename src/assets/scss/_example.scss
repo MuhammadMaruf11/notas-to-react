@@ -1,0 +1,72 @@
+@use "common" as *;
+
+.exampleArea {
+    padding-top: 120px;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 420px;
+        background: #f1f5f9;
+        z-index: -1;
+
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 230px;
+        background: #475569;
+        z-index: -1;
+    }
+}
+
+.sectionTitle {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 90px;
+
+    h2 {
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 34px;
+    }
+
+    p {
+        font-weight: 300;
+    }
+}
+
+.pageImages{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.pageWrapper{
+    .title{
+        text-align: center;
+        font-weight: 600;
+        font-size: 18px;
+        color: #334155;
+    }
+    .pageImg{
+        width: 384px;
+        height: 288px;
+        margin: 0 auto;
+        margin-top: 16px;
+        transition: all .3s;
+        z-index: 12;
+        img{
+            border-radius: 8px;
+        }
+        &:hover{
+            margin-top: 0;
+        }
+    }
+}

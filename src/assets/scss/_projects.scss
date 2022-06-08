@@ -92,7 +92,7 @@
         }
 
         p {
-            font-weight: 400;
+            font-weight: 300;
             color: #64748b;
         }
     }
@@ -104,7 +104,7 @@
 
 .cssArea {
     background: #f1f5f9;
-    padding: 80px 0;
+    padding: 120px 0;
 }
 
 .cssCompContent {
@@ -112,6 +112,8 @@
     margin: 0 auto;
 
     .cssBtns {
+        margin: 0 10px;
+
         .cssBtn {
             background: #fff;
             padding: 5px;
@@ -123,6 +125,7 @@
 
     .viewBtn {
         margin-top: 20px;
+        margin-left: 15px;
 
         a {
             color: #000;
@@ -147,7 +150,7 @@
 
     .compImages {
         position: absolute;
-        box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     }
 
     .img1 {
@@ -191,3 +194,158 @@
 }
 
 // CSS component end
+
+// JS component start
+
+.jsArea {
+    background: #f1f5f9;
+    padding: 120px 0;
+}
+
+.jsCompImg {
+    width: 570px;
+    margin-left: 66px;
+
+    .jsCompWrap {
+        width: 270px;
+        min-height: 170px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            color: #fff;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 50%;
+    }
+
+    .compImages {
+        width: 65px;
+        height: 65px;
+        text-align: center;
+        background: #fff;
+        margin: 0 auto;
+        border-radius: 50%;
+    }
+
+    .svelt {
+        background: #dc2626;
+        border-radius: 8px;
+        margin-bottom: 30px;
+    }
+
+    .react {
+        background: #30a5e9;
+        border-radius: 8px;
+        margin-bottom: 30px;
+    }
+
+    .next {
+        background: #334155;
+        border-radius: 8px;
+    }
+
+    .js {
+        background: #eab30a;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+
+    .angular {
+        background: #b91c1b;
+        border-radius: 8px;
+        margin-bottom: 30px;
+    }
+
+    .vue {
+        background: #47b881;
+        border-radius: 8px;
+    }
+}
+
+.jsCompContent {
+    width: 420px;
+    margin: 0 auto;
+    margin-top: 120px;
+
+    .jsCompWrapper {
+        margin-top: -20px;
+
+        p {
+            margin: 0 20px;
+            margin-bottom: 20px;
+            font-weight: 300;
+            line-height: 1.9;
+        }
+    }
+
+    .jsBtns {
+        margin: 0 10px;
+
+        .jsBtn {
+            background: #fff;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+    }
+
+    .viewBtn {
+        margin-top: 20px;
+        margin-left: 15px;
+
+        a {
+            color: #000;
+            font-weight: 700;
+            transition: all .3s;
+
+            &:hover {
+                color: #64748b;
+            }
+        }
+    }
+}
+
+
+// JS component end
+
+
+// Documentation start
+
+
+.complexArea {
+    background: #f1f5f9;
+    padding: 120px 0;
+}
+
+.docCompContent{
+    width: 420px;
+    margin: 0 auto;
+    .docWrapper{
+        margin-left: 25px;
+        p{
+            font-weight: 300;
+            i{
+                font-size: 12px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.docImg {
+    width: 600px;
+    transform: scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg);
+}
+
+// Documentation end
