@@ -2,12 +2,12 @@
 
 .heroArea{
     background-image: url(../img/bg/bg-1.jpg);
-    max-height: 760px;
-    background-size: inherit;
+    min-height: 800px;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center right;
     z-index: -1;
-    padding-top: 150px;
+    padding-top: 100px;
     margin-bottom: 150px;
 }
 

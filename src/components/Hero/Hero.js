@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
     return (
         <>
-            <div className="heroArea">
+            <div className="heroArea mt-65">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6">
