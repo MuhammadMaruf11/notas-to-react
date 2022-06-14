@@ -1,29 +1,37 @@
 @use "common" as *;
 
-.header-area{
+.headerArea {
     padding: 16px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background: #fff;
 }
 
-.navText{
-    a{
+.navText {
+    a {
         color: #2f3c4e;
         text-transform: uppercase;
         font-weight: 700;
         margin-right: 25px;
         font-size: 14px;
-        &:last-child{
+
+        &:last-child {
             font-weight: 500;
             font-size: 13px;
         }
     }
-    i{
+
+    i {
         margin-right: 5px;
         color: #8a97ab;
         font-size: 18px;
     }
 }
 
-.demoPages{
+.demoPages {
     color: #334155;
     text-transform: uppercase;
     font-weight: 700;
@@ -32,16 +40,19 @@
     font-weight: 600;
 }
 
-.socialLinks{
+.socialLinks {
     display: inline-block;
-    ul{
+
+    ul {
         margin: 0;
         padding: 0;
-        li{
+
+        li {
             display: inline-block;
             margin-right: 20px;
-            a{
-                i{
+
+            a {
+                i {
                     color: #94a3b8;
                 }
             }
@@ -49,12 +60,13 @@
     }
 }
 
-.thm-btn{
-    background:  $theme-color;
+.thm-btn {
+    background: $theme-color;
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    i{
+
+    i {
         font-size: 12px;
     }
 }

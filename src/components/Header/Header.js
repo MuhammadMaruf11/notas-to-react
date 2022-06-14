@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <>
-            <header className="header-area border-bottom">
+            <header className="headerArea headerSticky border-bottom">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6">
