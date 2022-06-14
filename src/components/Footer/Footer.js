@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="footerArea">
                 <div className="container pb-40 footer-border-bottom">
                     <div className="row">
-                        <div className="col-xl-8">
+                        <div className="col-xl-8 col-lg-8">
                             <div className="footerWrap">
                                 <h3 className="titleText">
                                     Let's keep in touch!
@@ -26,7 +26,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-2">
+                        <div className="col-xl-2 col-lg-2">
                             <div className="footer-widget">
                                 <h6 className="titleText">
                                     useful links
@@ -39,7 +39,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-xl-2">
+                        <div className="col-xl-2 col-lg-2">
                             <div className="footer-widget">
                                 <h6 className="titleText">
                                     other resources

@@ -8,6 +8,12 @@
 .openContent {
     padding-top: 150px;
     width: 550px;
+    @include mq(md){
+        width: auto;
+    }
+    @include mq(xs){
+        width: auto;
+    }
 
     .projectWrapper {
         .projectIcon {
@@ -60,6 +66,16 @@
     font-size: 880px;
     margin-top: -290px;
     margin-left: 135px;
+    @include mq(xl){
+        margin-left: 0;
+    }
+    @include mq(lg){
+        margin-left: 0;
+    }
+    @include mq(md){
+        margin-top: -330px;
+        margin-left: -275px;
+    }
 
     i {
         color: #334155;

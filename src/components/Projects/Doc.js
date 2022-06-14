@@ -6,8 +6,8 @@ const Doc = (props) => {
         <>
             <div className="complexArea">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-xl-6">
+                    <div className="row align-items-center">
+                        <div className="col-xl-6 col-lg-6 col-md-6">
                             <div className="docCompContent">
                                 {props.docComp}
                                 <div className="docWrapper">
@@ -17,7 +17,7 @@ const Doc = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-6">
+                        <div className="col-xl-6 col-lg-6 col-md-6">
                             <div className="docImg">
                                 <img src={doc} alt="doc-img" />
                             </div>

@@ -17,7 +17,7 @@ const Example = () => {
                     </div>
                     <div className="pageImages">
                         <div className="row">
-                            <div className="col-xl-4">
+                            <div className="col-xl-4 col-lg-4">
                                 <div className="pageWrapper">
                                     <div className="title">Login Page</div>
                                     <div className="pageImg loginImg">
@@ -25,7 +25,7 @@ const Example = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-4">
+                            <div className="col-xl-4 col-lg-4">
                                 <div className="pageWrapper">
                                     <div className="title">Profile Page</div>
                                     <div className="pageImg profileImg">
@@ -33,7 +33,7 @@ const Example = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-4">
+                            <div className="col-xl-4 col-lg-4">
                                 <div className="pageWrapper">
                                     <div className="title">Landing Page</div>
                                     <div className="pageImg landingImg">

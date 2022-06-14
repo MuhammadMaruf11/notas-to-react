@@ -29,11 +29,32 @@
     top: -100px;
     width: 1280px;
     border-radius: 8px;
+    @include mq(xl){
+        width: 1110px;
+    }
+    @include mq(lg){
+        width: 930px;
+    }
+    @include mq(md){
+        left: 0;
+        width: 100%;
+    }
+    @include mq(xs){
+        left: 0;
+        width: 100%;
+    }
 }
 
 .starterWrap {
     width: 800px;
     margin: 0 auto;
+
+    @include mq(md){
+        width: 666px;
+    }
+    @include mq(xs){
+        width: 300px;
+    }
 
     .emoji {
         font-size: 34px;

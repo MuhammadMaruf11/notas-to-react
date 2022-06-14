@@ -8,7 +8,7 @@ const OpenSource = () => {
                 <div className="container">
                     <div className="row pt-200 mt-200"></div>
                     <div className="row">
-                        <div className="col-xl-6">
+                        <div className="col-xl-6 col-lg-5 col-md-6">
                             <div className="openContent">
                                 <div className="projectWrapper">
                                     <div className="projectIcon">
@@ -25,7 +25,7 @@ const OpenSource = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-6">
+                        <div className="col-xl-6 col-lg-7 col-md-6">
                             <div className="githubIcon">
                                 <i className="fab fa-github"></i>
                             </div>

@@ -6,7 +6,7 @@ const Hero = () => {
             <div className="heroArea mt-65">
                 <div className="container">
                     <div className="row">
-                        <div className="col-xl-6">
+                        <div className="col-xl-6 col-lg-6 col-md-8">
                             <div className="hero-text-wrap">
                                 <h1 className="hero-title">Notus NextJS - A beautiful extension for Tailwind CSS.</h1>
                                 <p className="desc">

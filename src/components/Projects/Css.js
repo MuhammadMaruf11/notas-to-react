@@ -5,10 +5,10 @@ import cssComp from '../../utilities/Images/cssCompImg'
 const Css = (props) => {
     return (
         <>
-            <div className="cssArea">
+            <div className="cssArea fix">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-xl-6">
+                    <div className="row align-items-center">
+                        <div className="col-xl-6 col-lg-6 col-md-5">
                             <div className='cssCompContent'>
                                 {props.cssComp}
                                 <div className="cssBtns">
@@ -17,7 +17,7 @@ const Css = (props) => {
                                     <span className="cssBtn">LABELS</span>
                                     <span className="cssBtn">MENUS</span>
                                     <span className="cssBtn">NAVBARS</span>
-                                    <div className='py-2'></div>
+                                    <div className='py-2 d-lg-block d-none'></div>
                                     <span className="cssBtn">PAGINATION</span>
                                     <span className="cssBtn">PROGRESSBARS</span>
                                     <span className="cssBtn">TYPOGRAPHY</span>
@@ -27,7 +27,7 @@ const Css = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-6">
+                        <div className="col-xl-6 col-lg-6 col-md-7">
                             <div className="cssCompImg">
                                 <img className="compImages img1" src={cssComp.regular} alt="" />
                                 <img className="compImages img2" src={cssComp.github} alt="" />

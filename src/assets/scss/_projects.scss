@@ -5,6 +5,10 @@
     padding: 70px 0;
     position: relative;
 
+    @include mq(lg) {
+        padding-top: 0;
+    }
+
     &::before {
         position: absolute;
         left: 0;
@@ -26,6 +30,15 @@
     flex-direction: column;
     width: 390px;
 
+    @include mq(lg) {
+        width: 320px;
+        margin-top: -50px;
+    }
+    @include mq(md) {
+        width: auto;
+        margin-top: -50px;
+    }
+
     .cardImg {
         position: relative;
         border-radius: 10px;
@@ -44,6 +57,16 @@
             height: 60px;
             clip-path: polygon(0 100%, 100% 55%, 100% 100%, 0% 100%);
             background: #334155;
+
+            @include mq(lg) {
+                bottom: -1px;
+            }
+            @include mq(md) {
+                bottom: -1px;
+            }
+            @include mq(xs) {
+                bottom: -1px;
+            }
         }
     }
 
@@ -105,11 +128,24 @@
 .cssArea {
     background: #f1f5f9;
     padding: 120px 0;
+    @include mq(md){
+        padding: 80px 0 180px;
+    }
 }
 
 .cssCompContent {
     width: 420px;
     margin: 0 auto;
+
+    @include mq(lg) {
+        width: auto;
+    }
+    @include mq(md) {
+        width: auto;
+    }
+    @include mq(xs) {
+        width: auto;
+    }
 
     .cssBtns {
         margin: 0 10px;
@@ -120,6 +156,12 @@
             margin: 5px;
             border-radius: 15px;
             font-size: 14px;
+            @include mq(md){
+                display: inline-block;
+            }
+            @include mq(xs){
+                display: inline-block;
+            }
         }
     }
 
@@ -159,6 +201,15 @@
         transform: translateX(-50%);
         width: 120px;
         z-index: 3;
+
+        @include mq(lg) {
+            left: 65%;
+            transform: translateX(-65%);
+        }
+        @include mq(md) {
+            left: 95%;
+            transform: translateX(-95%);
+        }
     }
 
     .img2 {
@@ -166,30 +217,60 @@
         left: 185px;
         width: 110px;
         z-index: 2;
+
+        @include mq(lg) {
+            left: 155px;
+        }
     }
 
     .img3 {
         top: 125px;
         left: 0px;
         width: 190px;
+
+        @include mq(lg) {
+            left: -20px;
+        }
     }
 
     .img4 {
         bottom: -90px;
         left: 90px;
         width: 180px;
+
+        @include mq(lg) {
+            left: 50px;
+        }
     }
 
     .img5 {
         top: -70px;
         right: 120px;
         width: 210px;
+
+        @include mq(lg) {
+            right: -30px;
+        }
+        @include mq(lg) {
+            right: -30px;
+        }
+        @include mq(md) {
+            right: -155px;
+        }
     }
 
     .img6 {
         top: 300px;
         left: 30px;
         width: 500px;
+
+        @include mq(lg) {
+            width: 400px;
+        }
+
+        @include mq(md) {
+            width: 285px;
+        }
     }
 }
 
@@ -206,6 +287,19 @@
     width: 570px;
     margin-left: 66px;
 
+    @include mq(lg) {
+        width: auto;
+        margin: 0;
+    }
+    @include mq(md) {
+        width: auto;
+        margin: 0;
+    }
+    @include mq(xs) {
+        width: auto;
+        margin: 0;
+    }
+
     .jsCompWrap {
         width: 270px;
         min-height: 170px;
@@ -214,6 +308,14 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        @include mq(lg) {
+            width: 210px;
+            min-height: 170px;
+        }
+        @include mq(md){
+            margin: auto;
+        }
 
         a {
             color: #fff;
@@ -277,6 +379,21 @@
     margin: 0 auto;
     margin-top: 120px;
 
+    @include mq(xl) {
+        margin-right: inherit;
+        margin-left: auto;
+    }
+
+    @include mq(lg) {
+        margin-right: inherit;
+        margin-left: auto;
+    }
+    @include mq(md) {
+        width: auto;
+        margin-right: inherit;
+        margin-left: auto;
+    }
+
     .jsCompWrapper {
         margin-top: -20px;
 
@@ -297,6 +414,9 @@
             margin: 5px;
             border-radius: 15px;
             font-size: 14px;
+            @include mq(md){
+                display: inline-block;
+            }
         }
     }
 
@@ -328,14 +448,25 @@
     padding: 120px 0;
 }
 
-.docCompContent{
+.docCompContent {
     width: 420px;
     margin: 0 auto;
-    .docWrapper{
+
+    @include mq(md) {
+        width: auto;
+    }
+
+    @include mq(xs) {
+        width: auto;
+    }
+
+    .docWrapper {
         margin-left: 25px;
-        p{
+
+        p {
             font-weight: 300;
-            i{
+
+            i {
                 font-size: 12px;
                 margin-right: 10px;
             }
@@ -344,8 +475,8 @@
 }
 
 .docImg {
-    width: 600px;
     transform: scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg);
+
 }
 
 // Documentation end

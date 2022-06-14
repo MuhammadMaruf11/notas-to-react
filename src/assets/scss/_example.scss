@@ -23,14 +23,23 @@
         height: 230px;
         background: #475569;
         z-index: -1;
+        @include mq(md){
+            height: 1680px;
+        }
     }
 }
 
 .sectionTitle {
-    max-width: 900px;
+    width: 710px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 90px;
+    @include mq(lg){
+        width: 455px;
+    }
+    @include mq(md){
+        width: 350px;
+    }
 
     h2 {
         margin-bottom: 15px;
@@ -46,9 +55,24 @@
 .pageImages{
     width: 1200px;
     margin: 0 auto;
+    @include mq(xl){
+        width: 1110px;
+    }
+    @include mq(lg){
+        width: 930px;
+    }
+    @include mq(md){
+        width: 100%;
+    }
+    @include mq(xs){
+        width: 100%;
+    }
 }
 
 .pageWrapper{
+   @include mq(md){
+    margin-bottom: 260px;
+   }
     .title{
         text-align: center;
         font-weight: 600;
@@ -62,6 +86,15 @@
         margin-top: 16px;
         transition: all .3s;
         z-index: 12;
+        @include mq(xl){
+            width: 350px;
+        }
+        @include mq(lg){
+            width: 290px;
+        }
+        @include mq(md){
+            width: 100%;
+        }
         img{
             border-radius: 8px;
         }

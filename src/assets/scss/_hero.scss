@@ -2,17 +2,31 @@
 
 .heroArea{
     background-image: url(../img/bg/bg-1.jpg);
-    min-height: 800px;
+    height: 800px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center right;
     z-index: -1;
     padding-top: 100px;
     margin-bottom: 150px;
+    @include mq(lg){
+       padding-top: 0;
+       height: 500px;
+    }
+    @include mq(md){
+       padding-top: 0;
+       height: 400px;
+    }
 }
 
 .hero-text-wrap{
     padding: 180px 0;
+    @include mq(lg){
+        padding-top: 120px;
+    }
+    @include mq(md){
+        padding-top: 120px;
+    }
     .hero-title{
         color: #475569;
         font-size: 32px;

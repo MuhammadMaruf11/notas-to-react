@@ -7,11 +7,11 @@ const Javscript = (props) => {
         <>
             <div className="jsArea">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-xl-6">
+                    <div className="row align-items-center">
+                        <div className="col-xl- col-lg-6 col-md-6">
                             <div className="jsCompImg">
                                 <div className="row">
-                                    <div className="col-xl-6">
+                                    <div className="col-xl-6 col-lg-6">
                                         <div className="jsCompWrap svelt">
                                             <div className="compImages">
                                                 <img className="img1" src={jsComp.svelte} alt="" />
@@ -31,7 +31,7 @@ const Javscript = (props) => {
                                             <Link to='/about'>ReactJs</Link>
                                         </div>
                                     </div>
-                                    <div className="col-xl-6">
+                                    <div className="col-xl-6 col-lg-6">
                                         <div className="jsCompWrap js">
                                             <div className="compImages">
                                                 <img className="img2" src={jsComp.js} alt="" />
@@ -54,7 +54,7 @@ const Javscript = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-6">
+                        <div className="col-xl-6 col-lg-6 col-md-6">
                             <div className="jsCompContent">
                                 {props.jsComp}
                                 <div className="jsCompWrapper">
@@ -65,7 +65,7 @@ const Javscript = (props) => {
                                         <span className="jsBtn">MENUS</span>
                                         <span className="jsBtn">MODALS</span>
                                         <span className="jsBtn">NAVBARS</span>
-                                        <div className='py-2'></div>
+                                        <div className='py-2 d-lg-block d-none'></div>
                                         <span className="jsBtn">POPOVERS</span>
                                         <span className="jsBtn">TABS</span>
                                         <span className="jsBtn">TOOLTIPS</span>

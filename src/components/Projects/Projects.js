@@ -60,8 +60,8 @@ const Projects = () => {
         <>
             <div className="projectArea">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-xl-6">
+                    <div className="row justify-content-between">
+                        <div className="col-xl-6 col-lg-5 col-md-6">
                             <div className="projectCard">
                                 <div className="cardImg">
                                     <img src={laptop} alt="laptop-img" />
@@ -72,21 +72,21 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-6">
+                        <div className="col-xl-6 col-lg-6 col-md-6">
                             <div className="projectWrap">
                                 <div className="row">
-                                    <div className="col-xl-6">
+                                    <div className="col-xl-6 col-lg-6 col-md-6">
                                         <div>
                                             {cssComp}
                                         </div>
                                     </div>
-                                    <div className="col-xl-6">
+                                    <div className="col-xl-6 col-lg-6 col-md-6">
                                         <div>{pagesComp}</div>
                                     </div>
-                                    <div className="col-xl-6">
+                                    <div className="col-xl-6 col-lg-6 col-md-6">
                                         <div>{jsComp}</div>
                                     </div>
-                                    <div className="col-xl-6">
+                                    <div className="col-xl-6 col-lg-6 col-md-6">
                                         <div>{docComp}</div>
                                     </div>
 
