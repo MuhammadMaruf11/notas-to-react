@@ -2,12 +2,12 @@
 
 .openArea {
     background: #475569;
-    padding-bottom: 600px;
     margin-top: -230px;
 }
 
 .openContent {
     padding-top: 150px;
+    width: 550px;
 
     .projectWrapper {
         .projectIcon {
@@ -33,5 +33,36 @@
                 }
             }
         }
+    }
+
+    .githubBtn {
+        width: 130px;
+        height: 50px;
+        display: inline-block;
+        text-align: center;
+        line-height: 50px;
+        background: #334155;
+        margin-left: 20px;
+
+        a {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 600;
+        }
+    }
+}
+
+.githubIcon {
+    color: #334155;
+    opacity: 0.8;
+    text-align: end;
+    font-size: 880px;
+    margin-top: -290px;
+    margin-left: 135px;
+
+    i {
+        color: #334155;
+        opacity: .8;
     }
 }

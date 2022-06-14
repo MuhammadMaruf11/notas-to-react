@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const OpenSource = () => {
     return (
         <>
-            <div className="openArea">
+            <div className="openArea fix">
                 <div className="container">
                     <div className="row pt-200 mt-200"></div>
                     <div className="row">
