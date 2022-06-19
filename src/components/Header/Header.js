@@ -1,18 +1,56 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from "react-bootstrap";
 import { Link } from 'react-router-dom';
-// import { Images } from "../../utilities/Images";
 
 const Header = () => {
+
+
+    const [menuBtn, setMenuBtn] = useState(false);
+ 
+    let mobileMenu;
+    let menuMask;
+    if (menuBtn) {
+
+        mobileMenu =
+            <div class="mobileNavbar flex d-flex">
+                <div className="navLink">
+                    <div className="socialLinks">
+                        <ul>
+                            <li><Link to="/about"><i className="far fa-file-alt"></i> <span>docs</span></Link></li>
+                            <li><Link to="/" className="demoPages"><span>demo pages</span></Link></li>
+                            <li><Link to="/"><i className="fab fa-facebook"></i> <span>share</span></Link></li>
+                            <li><Link to="/"><i className="fab fa-twitter"></i><span>tweet</span></Link></li>
+                            <li><Link to="/"><i className="fab fa-github"></i><span>star</span></Link></li>
+                            <li><Button className='thm-btn'><i className="fas fa-arrow-alt-circle-down"></i> download</Button></li>
+                        </ul>
+                    </div>
+                </div>
+                {menuMask}
+            </div>
+
+        menuMask =
+            <div onClick={() => setMenuBtn(false)}>
+                {/* <button class="btnClose">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </button> */}
+            </div>
+    }
+
+
+
+
+
     return (
         <>
             <header className="headerArea border-bottom">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-xl-6 col-lg-6 col-md-6">
+                        <div className="col-6">
                             <div className="navText">
                                 <Link to="/">Notus NextJS</Link>
-                                <Link to="/" className='d-lg-inline d-none'><i className="far fa-file-alt"></i> docs</Link>
+                                <Link to="/about" className='d-lg-inline d-none'><i className="far fa-file-alt"></i> docs</Link>
                             </div>
                         </div>
                         <div className="col-xl-6 col-lg-6 d-lg-block d-none text-end">
@@ -29,32 +67,14 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="col-6 d-lg-none d-block text-end">
-                            <button class="mobileMenuBtn">
+                            <button onClick={() => setMenuBtn(!menuBtn)} class="mobileMenuBtn">
                                 <span class="bar1"></span>
                                 <span class="bar2"></span>
                                 <span class="bar3"></span>
                             </button>
                         </div>
                         <div className="col">
-                            <div class="mobileNavbar flex d-none">
-                                <div className="navLink">
-                                    <div className="socialLinks">
-                                        <ul>
-                                            <li><Link to="/"><i className="far fa-file-alt"></i> docs</Link></li>
-                                            <li><Link to="/" className="demoPages">demo pages</Link></li>
-                                            <li><Link to="/"><i className="fab fa-facebook"></i> share</Link></li>
-                                            <li><Link to="/"><i className="fab fa-twitter"></i>tweet</Link></li>
-                                            <li><Link to="/"><i className="fab fa-github"></i>star</Link></li>
-                                        </ul>
-                                    </div>
-                                    <Button className='thm-btn'><i className="fas fa-arrow-alt-circle-down"></i> download</Button>
-                                </div>
-                                <button class="btnClose">
-                                    <span class="bar1"></span>
-                                    <span class="bar2"></span>
-                                    <span class="bar3"></span>
-                                </button>
-                            </div>
+                            {mobileMenu}
                         </div>
                     </div>
                 </div>

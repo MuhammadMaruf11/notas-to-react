@@ -4,8 +4,8 @@
     padding: 16px 0;
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
+    margin: auto;
     z-index: 99;
     background: #fff;
 }
@@ -75,68 +75,58 @@
 // mobile navbar start
 
 
-.mobileNavbar{
+.mobileNavbar {
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: 60%;
     left: 0;
-    top: 0;
-    background: rgb(51 63 72 / 90%);
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow-y: auto;
-    visibility: hidden;
-    display: none;
-    opacity: 0;
-    z-index: -99;
-    transition: all .3s;
-    &.active{
-        visibility: visible;
-        opacity: 1;
-        z-index: 9999;
-        display: flex;
-    }
-    @include mq(md){
-        visibility: visible;
-        opacity: 1;
-        display: block;
-    }
-    @include mq(xs){
-        visibility: visible;
-        opacity: 1;
-        display: block;
-    }
-}
-
-.mobileNavbar li{
-    display: block;
-    margin-bottom: 20px;
-    a{
-        color: #fff;
-        font-size: 55px;
-        font-family: 'Katibeh', cursive;
-        text-transform: uppercase;
-        &:hover{
-            color: chocolate;
+    background: #fff;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    .navLink {
+        .socialLinks {
+            margin-left: 50px;
+            @include mq(xs) {
+                margin-left: 20px;
+            }
+            ul {
+                margin-top: 30px;
+                li {
+                    display: block;
+                    font-size: 12;
+                    font-weight: 600;
+                    margin-bottom: 30px;
+                    a {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        span {
+                            color: #334155;
+                            font-size: 13px;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                        }
+                        i {
+                            margin-right: 10px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
-.mobileMenuBtn{
+
+
+.mobileMenuBtn {
     cursor: pointer;
     width: 30px;
     height: 30px;
     border: 1px solid #e4e4e7;
     background: #fff;
     position: relative;
-    display: none;
-    visibility: hidden;
-    opacity: 0;
     margin-left: auto;
-    &.active{
-        opacity: 0;
-    }
+
     .bar1 {
         position: absolute;
         top: 25%;
@@ -146,16 +136,18 @@
         height: 3px;
         background: #334155;
     }
-    .bar2{
+
+    .bar2 {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translateX(-50%,);
+        transform: translateX(-50%, );
         width: 18px;
         height: 3px;
         background: #334155;
     }
-    .bar3{
+
+    .bar3 {
         position: absolute;
         top: 75%;
         left: 50%;
@@ -164,25 +156,4 @@
         height: 3px;
         background: #334155;
     }
-    @include mq(md){
-        visibility: visible;
-        opacity: 1;
-        display: block;
-    }
-    @include mq(xs){
-        visibility: visible;
-        opacity: 1;
-        display: block;
-    }
-}
-.btnClose {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 48px;
-    color: #334155;
-    background: #fff;
-    border: 1px solid;
-    padding: 0 10px 5px 10px;
-    cursor: pointer;
 }

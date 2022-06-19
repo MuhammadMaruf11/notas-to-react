@@ -63,10 +63,12 @@ const Javscript = (props) => {
                                         <span className="jsBtn">ALERTS</span>
                                         <span className="jsBtn">DROPDOWNS</span>
                                         <span className="jsBtn">MENUS</span>
+                                        <div className="d-block d-md-none py-2"></div>
                                         <span className="jsBtn">MODALS</span>
                                         <span className="jsBtn">NAVBARS</span>
                                         <div className='py-2 d-lg-block d-none'></div>
                                         <span className="jsBtn">POPOVERS</span>
+                                        <div className="d-block d-md-none py-2"></div>
                                         <span className="jsBtn">TABS</span>
                                         <span className="jsBtn">TOOLTIPS</span>
                                     </div>

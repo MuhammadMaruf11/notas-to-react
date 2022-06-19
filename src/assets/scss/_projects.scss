@@ -18,6 +18,9 @@
         height: 75px;
         clip-path: polygon(0 100%, 100% 27%, 100% 100%, 0% 100%);
         background: #f1f5f9;
+        @include mq(xs){
+            display: none;
+        }
     }
 }
 
@@ -37,6 +40,11 @@
     @include mq(md) {
         width: auto;
         margin-top: -50px;
+    }
+    @include mq(xs) {
+        width: auto;
+        width: 290px;
+        margin-bottom: 20px;
     }
 
     .cardImg {
@@ -131,6 +139,9 @@
     @include mq(md){
         padding: 80px 0 180px;
     }
+    @include mq(xs){
+        padding: 30px 0 180px;
+    }
 }
 
 .cssCompContent {
@@ -210,6 +221,10 @@
             left: 95%;
             transform: translateX(-95%);
         }
+        @include mq(xs) {
+            left: 85%;
+            transform: translateX(-85%);
+        }
     }
 
     .img2 {
@@ -221,6 +236,9 @@
         @include mq(lg) {
             left: 155px;
         }
+        @include mq(xs) {
+            left: 125px;
+        }
     }
 
     .img3 {
@@ -231,6 +249,9 @@
         @include mq(lg) {
             left: -20px;
         }
+        @include mq(xs) {
+            left: -45px;
+        }
     }
 
     .img4 {
@@ -240,6 +261,10 @@
 
         @include mq(lg) {
             left: 50px;
+        }
+        @include mq(xs) {
+            left: 30px;
+            top: -135px;
         }
     }
 
@@ -257,6 +282,9 @@
         @include mq(md) {
             right: -155px;
         }
+        @include mq(xs) {
+            right: -125px;
+        }
     }
 
     .img6 {
@@ -271,6 +299,10 @@
         @include mq(md) {
             width: 285px;
         }
+        @include mq(xs) {
+            left: -12px;
+            width: 325px;
+        }
     }
 }
 
@@ -281,6 +313,9 @@
 .jsArea {
     background: #f1f5f9;
     padding: 120px 0;
+    @include mq(xs){
+        padding: 15px;
+    }
 }
 
 .jsCompImg {
@@ -314,6 +349,10 @@
             min-height: 170px;
         }
         @include mq(md){
+            margin: auto;
+        }
+        @include mq(xs){
+            width: 90%;
             margin: auto;
         }
 
@@ -360,6 +399,9 @@
         border-radius: 8px;
         margin-bottom: 30px;
         margin-top: 50px;
+        @include mq(xs){
+            margin-top: 30px;
+        }
     }
 
     .angular {
@@ -389,6 +431,11 @@
         margin-left: auto;
     }
     @include mq(md) {
+        width: auto;
+        margin-right: inherit;
+        margin-left: auto;
+    }
+    @include mq(xs) {
         width: auto;
         margin-right: inherit;
         margin-left: auto;

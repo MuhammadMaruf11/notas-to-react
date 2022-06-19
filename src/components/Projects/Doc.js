@@ -8,7 +8,7 @@ const Doc = (props) => {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-xl-6 col-lg-6 col-md-6">
-                            <div className="docCompContent">
+                            <div className="docCompContent pb-xs-100">
                                 {props.docComp}
                                 <div className="docWrapper">
                                     <p><i className="fas fa-fingerprint"></i>Built by Developers for Developers</p>

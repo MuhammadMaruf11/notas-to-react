@@ -3,6 +3,9 @@
 .footerArea {
     background: #e2e8ef;
     padding: 70px 0;
+    @include mq(xs){
+        padding-top: 250px;
+    }
 }
 
 .footerWrap {
@@ -90,7 +93,7 @@
     }
 }
 
-.footer-widget {
+.footerWidget {
     @include mq(md) {
         text-align: center;
     }

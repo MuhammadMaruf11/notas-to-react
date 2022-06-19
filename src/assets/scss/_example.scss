@@ -9,7 +9,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 420px;
+        height: 550px;
         background: #f1f5f9;
         z-index: -1;
 
@@ -26,6 +26,9 @@
         @include mq(md){
             height: 1680px;
         }
+        @include mq(xs){
+            height: 885px;
+        }
     }
 }
 
@@ -39,6 +42,9 @@
     }
     @include mq(md){
         width: 350px;
+    }
+    @include mq(xs){
+        width: 285px;
     }
 
     h2 {
@@ -94,6 +100,9 @@
         }
         @include mq(md){
             width: 100%;
+        }
+        @include mq(xs){
+            width: 90%;
         }
         img{
             border-radius: 8px;

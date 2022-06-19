@@ -76,6 +76,10 @@
         margin-top: -330px;
         margin-left: -275px;
     }
+    @include mq(xs){
+        margin-top: -225px;
+        margin-left: -125px
+    }
 
     i {
         color: #334155;

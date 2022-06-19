@@ -17,6 +17,10 @@
        padding-top: 0;
        height: 400px;
     }
+    @include mq(xs){
+        background-position: top right;
+       height: 660px;
+    }
 }
 
 .hero-text-wrap{
@@ -35,7 +39,7 @@
     .desc{
         margin-bottom: 40px;
         font-size: 17px;
-        font-weight: 400;
+        font-weight: 300;
     }
 }
 
