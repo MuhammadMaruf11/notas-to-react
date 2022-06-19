@@ -6,7 +6,7 @@ const OpenSource = () => {
         <>
             <div className="openArea fix">
                 <div className="container">
-                    <div className="row pt-md-200 mt-md-200 pt-xs-100"></div>
+                    <div className="row pt-200 mt-200 pt-xs-100 mt-xs-100"></div>
                     <div className="row">
                         <div className="col-xl-6 col-lg-5 col-md-6">
                             <div className="openContent">
