@@ -2,6 +2,10 @@
 
 build node_modules then
 
+create router-dom for single page applicatio
+
+### npm install react-router-dom@6 (if needed)
+
 ### `npm start`
 
 Runs the app in the development mode.\
